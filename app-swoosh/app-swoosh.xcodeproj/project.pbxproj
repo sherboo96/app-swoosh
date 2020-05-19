@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91246222247357E700957478 /* ButtonBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91246221247357E700957478 /* ButtonBorder.swift */; };
 		917191B52470B53800C3F332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917191B42470B53800C3F332 /* AppDelegate.swift */; };
 		917191B72470B53800C3F332 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917191B62470B53800C3F332 /* SceneDelegate.swift */; };
 		917191B92470B53800C3F332 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917191B82470B53800C3F332 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91246221247357E700957478 /* ButtonBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBorder.swift; sourceTree = "<group>"; };
 		917191B12470B53800C3F332 /* app-swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-swoosh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		917191B42470B53800C3F332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		917191B62470B53800C3F332 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91246220247357A300957478 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91246221247357E700957478 /* ButtonBorder.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		917191A82470B53800C3F332 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		917191B32470B53800C3F332 /* app-swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				91246220247357A300957478 /* View */,
 				917191B42470B53800C3F332 /* AppDelegate.swift */,
 				917191B62470B53800C3F332 /* SceneDelegate.swift */,
 				917191B82470B53800C3F332 /* ViewController.swift */,
@@ -141,6 +152,7 @@
 				917191B92470B53800C3F332 /* ViewController.swift in Sources */,
 				917191B52470B53800C3F332 /* AppDelegate.swift in Sources */,
 				917191B72470B53800C3F332 /* SceneDelegate.swift in Sources */,
+				91246222247357E700957478 /* ButtonBorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
