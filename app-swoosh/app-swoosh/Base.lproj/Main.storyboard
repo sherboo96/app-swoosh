@@ -80,19 +80,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="YdC-GZ-e49" id="NLE-BY-Aw8"/>
-                        <outlet property="swooshImg" destination="UEo-h4-G7g" id="ae2-uu-IHC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-67" y="130"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="wDz-GP-Qeg">
             <objects>
-                <viewController id="YeG-VC-PJN" sceneMemberID="viewController">
+                <viewController id="YeG-VC-PJN" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UCH-gZ-Rqm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,7 +159,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="df7-gd-Rm8" kind="show" id="7d9-je-MkK"/>
+                                    <action selector="nextButtonAC:" destination="YeG-VC-PJN" eventType="touchUpInside" id="ix9-aK-Dk7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bch-au-MU9">
@@ -199,16 +195,19 @@
                         <viewLayoutGuide key="safeArea" id="RlF-Hr-aac"/>
                     </view>
                     <navigationItem key="navigationItem" id="QIT-gd-fqX"/>
+                    <connections>
+                        <segue destination="df7-gd-Rm8" kind="show" identifier="SkillVCSegue" id="g0K-BY-psc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fd-aB-jOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="zA2-t9-cNm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="834.78260869565224" y="130.43478260869566"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="gOm-42-4g6">
             <objects>
-                <viewController id="df7-gd-Rm8" sceneMemberID="viewController">
+                <viewController id="df7-gd-Rm8" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DX2-lh-KP3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

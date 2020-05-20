@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var bgImg: UIImageView!
-    @IBOutlet weak var swooshImg: UIImageView!
+//    @IBOutlet weak var bgImg: UIImageView!
+//    @IBOutlet weak var swooshImg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
