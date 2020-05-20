@@ -109,6 +109,9 @@
                                         <state key="normal" title="Men">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMenTabbed:" destination="YeG-VC-PJN" eventType="touchUpInside" id="8CC-Sa-Qom"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJo-oz-vvw" customClass="ButtonBorder" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="66" width="382" height="48"/>
@@ -120,6 +123,9 @@
                                         <state key="normal" title="Wommans">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWommanTabbed:" destination="YeG-VC-PJN" eventType="touchUpInside" id="ww0-kr-UJl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhH-62-4kX" customClass="ButtonBorder" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="131.99999999999997" width="382" height="48"/>
@@ -131,6 +137,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTabbed:" destination="YeG-VC-PJN" eventType="touchUpInside" id="qKR-b0-gBo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -148,7 +157,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCv-7D-tGn" customClass="ButtonBorder" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCv-7D-tGn" customClass="ButtonBorder" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="648" width="374" height="48"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39904269370000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -196,6 +205,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="QIT-gd-fqX"/>
                     <connections>
+                        <outlet property="nextBtn" destination="xCv-7D-tGn" id="hgu-fs-AnG"/>
                         <segue destination="df7-gd-Rm8" kind="show" identifier="SkillVCSegue" id="g0K-BY-psc"/>
                     </connections>
                 </viewController>
